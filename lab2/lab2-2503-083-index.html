@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>春韵数字展销平台</title>
+    <!-- 引入外部CSS -->
+    <link rel="stylesheet" href="../lab2/lab2-2503-083-index.css">
+</head>
+<body>
+    <!-- 头部：Logo + 固定导航栏 -->
+    <header>
+        <div class="logo">
+            <img src="../lab2/lab2-img/logo.png" alt="春韵Logo">
+            <h1>春韵数字展销平台</h1>
+        </div>
+        <!-- 固定定位导航菜单 -->
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">图书分类</a></li>
+                <li><a href="#">热门推荐</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主体三栏浮动布局 -->
+    <div class="container">
+        <!-- 左侧栏：相对定位 图书分类 -->
+        <aside class="left-bar">
+            <h2>图书分类</h2>
+            <ul class="category">
+                <li><a href="#">计算机图书</a></li>
+                <li><a href="#">文学小说</a></li>
+                <li><a href="#">历史传记</a></li>
+                <li><a href="#">少儿读物</a></li>
+                <li><a href="#">考试教材</a></li>
+            </ul>
+        </aside>
+
+        <!-- 中间栏：图书展示 -->
+        <main class="middle-bar">
+            <!-- 图书展示区：父相子绝 + 悬停效果 -->
+            <section class="book-show">
+                <h2>图书展示</h2>
+                <div class="book-list">
+                    <!-- 第一个图书：鼠标悬停显示隐藏 -->
+                    <div class="book-item">
+                        <img src="../lab2/lab2-img/book1.png" alt="图书1">
+                        <div class="book-info">点击查看详情</div>
+                        <p>Web前端开发实战</p>
+                    </div>
+                    <div class="book-item"><img src="../lab2/lab2-img/book2.png" alt="图书2"><p>Python入门</p></div>
+                    <div class="book-item"><img src="../lab2/lab2-img/book3.png" alt="图书3"><p>Java编程</p></div>
+                </div>
+            </section>
+
+            <!-- 热门推荐：浮动排列 -->
+            <section class="hot-book">
+                <h2>热门推荐</h2>
+                <div class="hot-list">
+                    <div class="hot-item">深度学习</div>
+                    <div class="hot-item">人工智能</div>
+                    <div class="hot-item">大数据</div>
+                    <div class="hot-item">云计算</div>
+                </div>
+            </section>
+
+            <!-- 新书上市：Table布局 -->
+            <section class="new-book">
+                <h2>新书上市</h2>
+                <table border="1" cellpadding="8" cellspacing="0">
+                    <tr>
+                        <th>书名</th>
+                        <th>价格</th>
+                        <th>出版时间</th>
+                    </tr>
+                    <tr>
+                        <td>前端设计模式</td>
+                        <td>59元</td>
+                        <td>2025-01</td>
+                    </tr>
+                    <tr>
+                        <td>微服务架构</td>
+                        <td>69元</td>
+                        <td>2025-02</td>
+                    </tr>
+                    <tr>
+                        <td>数据分析实战</td>
+                        <td>49元</td>
+                        <td>2025-03</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <!-- 右侧栏：固定定位 促销广告 -->
+        <aside class="right-bar">
+            <h3>限时促销</h3>
+            <img src="../lab2/lab2-img/book4.png" alt="促销广告">
+            <p>全场图书8折起</p>
+            <p>满100减30</p>
+        </aside>
+    </div>
+</body>
+</html>
